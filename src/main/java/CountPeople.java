@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class CountPeople {
     int allPeople = 0;
+
     void countPeople() {
         Scanner scan = new Scanner(System.in);
         System.out.println("Введите количество человека:");
