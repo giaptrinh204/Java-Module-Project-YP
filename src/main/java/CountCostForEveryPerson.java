@@ -1,12 +1,12 @@
 public class CountCostForEveryPerson {
-    void ccfForEveryPerson(double share, double people) {
+    void countCostForEveryPerson(double share, double people) {
         share = share / people;
-        Math.floor(share);
-        while (share > 10) {
-            share = share % 10;
+        int remainder = (int) Math.floor(share);
+        while (remainder > 10) {
+            remainder = remainder % 10;
         }
         String ruble;
-        switch ((int) share) {
+        switch (remainder) {
             case 1:
                 ruble = " рубль";
                 break;
